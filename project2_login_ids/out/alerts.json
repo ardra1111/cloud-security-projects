@@ -1,0 +1,52 @@
+{
+  "alerts": [
+    {
+      "type": "BRUTE_FORCE",
+      "ip": "203.0.113.200",
+      "count": 6,
+      "window_minutes": 5,
+      "last_seen": "2025-08-17T11:05:00+00:00",
+      "recommendation": "Block IP; enable MFA; enforce key-based auth; add temporary ban."
+    },
+    {
+      "type": "IMPOSSIBLE_TRAVEL",
+      "user": "ardra",
+      "from": {
+        "ip": "203.0.113.10",
+        "cc": "IN",
+        "city": "Mumbai"
+      },
+      "to": {
+        "ip": "198.51.100.23",
+        "cc": "GB",
+        "city": "London"
+      },
+      "time_delta_hours": 0.5,
+      "distance_km": 7191.7,
+      "required_speed_kmh": 14383.4,
+      "threshold_kmh": 800.0,
+      "recommendation": "Challenge user; require MFA; review session risk; alert SOC."
+    }
+  ],
+  "summary": {
+    "total_alerts": 2,
+    "by_type": {
+      "BRUTE_FORCE": 1,
+      "IMPOSSIBLE_TRAVEL": 1
+    },
+    "top_fail_ips": [
+      [
+        "203.0.113.200",
+        6
+      ],
+      [
+        "203.0.113.77",
+        3
+      ],
+      [
+        "198.51.100.5",
+        1
+      ]
+    ]
+  }
+}
