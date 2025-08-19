@@ -1,6 +1,6 @@
 # Cloud Security Projects
 
-This repository contains two practical cloud security projects** demonstrating system hardening, log monitoring, and intrusion detection using Python and Linux.
+This repository contains two practical cloud security projects demonstrating system hardening, log monitoring, and intrusion detection using Python and Linux.
 
 ---
 
